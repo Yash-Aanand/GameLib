@@ -1,0 +1,259 @@
+body {
+  background-image: url("images/main.jpg");
+  background-repeat: repeat;
+  background-size: 250px;
+  margin: 0px;
+  color: white ;
+}
+
+
+h1 {
+    margin: 0px;
+    display: block;
+}
+
+.navbar {
+    text-align: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    display: block;
+    box-shadow: 1px 4px 20px rgb(8, 189, 255);
+
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+  
+@font-palette-values --Purples {    font-family: Rocher;
+    base-palette: 6;
+}
+
+.purples {
+    font-palette: --Purples;
+    font-family: 'Rocher';
+    font-size: 6rem;
+    transition: 0.2s;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+.purples:hover {
+    transform: scale(1.1);
+    text-shadow: 3px 3px 2px rgb(255, 214, 68);
+}
+
+
+
+#by:hover {
+    transform: scale(1.005);
+}
+
+.title {
+    text-decoration: none;
+    display: flex;
+    justify-content: center ;
+}
+
+.by {
+    justify-content: right !important;
+    margin-right: 10px;
+}
+
+
+.games {
+    margin: 5vh 5vh 0vh 5vh;
+    border: 1px solid rgb(60, 197, 255);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 10px rgb(60, 197, 255);
+    
+}
+
+.gtitle {
+    display: block;
+    -webkit-text-stroke: 1px  rgb(60, 197, 255);
+    
+}
+
+h2 {
+    margin: 30px 5px 30px 5px;
+}
+
+.glist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.game {
+    border-radius: 7px;
+    border: 1px solid rgb(60, 197, 255);
+    background-color:rgba(18, 18, 18, 0.7);
+    text-align: center;
+    margin: 25px 15px;
+    box-shadow: 0px 0px 10px rgb(60, 197, 255);
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.game:hover { 
+    transform: scale(1.1);
+    border-color: gold;
+    box-shadow: 0px 0px 10px gold;
+    
+}
+
+h3.gname {
+    padding: 5px 10px;
+    font-weight: 900;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+.gimg {
+    position: relative;
+    top: -3px;
+    width: 215px;
+    height: 240px;
+}
+
+.gimgdiv {
+    height: 235px;
+    overflow: hidden;
+}
+
+.footer {
+  
+    background-color: rgb(255, 226, 209)(195, 195, 195);
+    text-align: center;
+    display:flex;
+    justify-content: center;
+  }
+  
+  .footer-icons img  {
+    margin: 20px 10px;
+    display: inline-block;
+    width: 50px;
+  
+  }
+  .footer-icons:nth-of-type(3) img {
+    margin: 12px 10px;
+    width: 66px;
+  
+  }
+  
+  .footer-icons{
+    transition: 0.2s;
+    height: 6;
+  }
+  .footer-icons:hover{
+    transform: scale(1.2);
+  }
+
+#git {
+    width: 65px;
+    position: relative;
+    top: -8px;
+}
+
+#insta {
+    width: 55px;
+    position: relative;
+    top: -2px;
+}
+
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+  }
+  
+  h2 {
+    font-size: 3.2rem;    
+    text-align: center;
+  }
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 30px rgb(60, 197, 255),
+        0 0 60px rgb(60, 197, 255),
+        0 0 70px rgb(60, 197, 255);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+
+@media (max-width:450px) {
+    .purples {
+        font-size: 5rem;
+
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+
+@media (max-width:375px) {
+    .purples {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.3rem;
+    }
+}
+
+
+@media (max-width:305px) {
+    .purples {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width:1120px) {
+    .game {
+        transform: scale(1.1);
+        margin: 45px 70px;
+    }
+    
+    .game:hover { 
+        transform: scale(1.21);
+        
+    }
+}
+
+
+@media (max-width:870px) {
+    .game { 
+        margin: 45px 20px;
+    }
+
+}
+
